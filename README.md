@@ -22,4 +22,4 @@ Each script contains a small description, so view them in your text editor for d
 I will fill out the wiki on usage and screenshots/videos to help understand how they work, but for now I have formatted them fairly nicely and included comments.
 
 ## License:
-Images/scripts are shared via git under a [Creative Commons Attribution-ShareAlike 2.5 Canada License](http://creativecommons.org/licenses/by-sa/2.5/ca/)
+Images/scripts are shared via git under a [GNU General Public License (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.txt)
