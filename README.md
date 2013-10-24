@@ -8,9 +8,9 @@ They include:
     - CanVecSHP.sh
     - geonamerge.sh
 
-The scripts use [GDAL](www.gdal.org/) with a combination of [wget](www.gnu.org/s/wget/) to download free or public GIS spatial data about Canada from various sources and output them in a usable format for a GIS. 
+The scripts use [GDAL](http://www.gdal.org/) with a combination of [wget](http://www.gnu.org/s/wget/) to download free or public GIS spatial data about Canada from various sources and output them in a usable format for a GIS. 
 
-Currently, they favor the shapefile. That could change as I grow accustom to spatial database formats like [postgresql](www.postgresql.org/) with [postgis](postgis.refractions.net/).
+Currently, they favor the shapefile. That could change as I grow accustom to spatial database formats like [postgresql](http://www.postgresql.org/) with [postgis](http://postgis.refractions.net/).
 
 ## General Usage:
 
