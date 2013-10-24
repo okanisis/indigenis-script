@@ -1,5 +1,27 @@
-﻿#!/bin/bash
+#!/bin/bash
 set -e
+# ---------------------------------------------------------------------------
+# geonamerge.sh - merges geobase canadian geographical names database into a
+#                 seamless nationwide shapefile
+
+# Copyright 2013, Donovan Cameron (sault.don@gmail.com)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License at (http://www.gnu.org/licenses/) for
+# more details.
+
+# Usage: geonamerge.sh (set exec bit before running, chmod +x geonamerge.sh)
+
+# Revision history:
+# 2012-05-20    Created
+# ---------------------------------------------------------------------------﻿
 
 #  wgetURL URL that contains remote files
 #+ variables with an asterisk (*) should be modified if needed
@@ -63,7 +85,7 @@ ogr2ogr -f "ESRI Shapefile" ${OUTPUT} ${VSI}/${inZIP}/${INPUT} -progress -fid "<
 
 #  Modify below for a batch merge, this example uses echo as an example:
 for i in ${urlRIP}
- do 
+ do
      BASENM=$(basename ${i})
      INPUT=${BASENM:4:5}${SUFX}
 #                   ^^^
