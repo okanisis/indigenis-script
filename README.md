@@ -23,5 +23,3 @@ I will fill out the wiki on usage and screenshots/videos to help understand how 
 
 ## License:
 Images/scripts are shared via git under a [Creative Commons Attribution-ShareAlike 2.5 Canada License](http://creativecommons.org/licenses/by-sa/2.5/ca/)
-
-For more information, visit [indigenis.blogspot.com](http://indigenis.blogspot.com)
