@@ -1,23 +1,27 @@
 #!/bin/bash
 set -e
-##################################################
-# CanDataFTP_v1
-# 	-be sure to run "chmod a+x CanDataFTP_v1.sh"
-#	 prior to execution!
-# by Donovan Cameron, http://indigenis.blogspot.com
-#	-Ubuntu 10.04 Lucid
-#	-wget 1.12
-# on May June 11, 2011 - 20:19
-#
-# This script will find all necessary zip files from
-# an FTP site (you specify from a list of choices).
-# Files are found based on a pre-formatted CSV column
-# of NTS sheet numbers
-#
-# When you input pathnames, by default they will be searched
-# assuming they are in your Home folder unless specified otherwise!
-##################################################
+# ---------------------------------------------------------------------------
+# CanDataFTP - downloads canvec tiles and geobase dems from a preformatted csv
+#              file (ie, single column with no header or special chars)
 
+# Copyright 2013, Donovan Cameron (sault.don@gmail.com)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License at (http://www.gnu.org/licenses/) for
+# more details.
+
+# Usage: CanDataFTP.sh (set exec bit before running, chmod +x CanDataFTP.sh)
+
+# Revision history:
+# 2011-06-11    Created
+# ---------------------------------------------------------------------------
 
 ########################
 #	Introduction
