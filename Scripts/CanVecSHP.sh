@@ -1,16 +1,26 @@
 #!/bin/bash
 set -e
-# CanVecSHP_v1.sh
-#   -be sure to run `chmod a+x CanVecSHP_v1.sh` prior to execution!
-# by Donovan Cameron
-#  http://indigenis.blogspot.com
-#   -Ubuntu 10.04 Lucid
-#   -GDAL 1.6.3 - released 2009/11/19
-# on May 29, 2011 - 20:26
-#
-# My attempt at a bash *nix script to batch process Canvec shapefiles
-# because they come so cleverly organized when not in a gdb format...
-####################################
+# ---------------------------------------------------------------------------
+# CanVecSHP - merges canvec shapefile tiles into organized folders with names
+
+# Copyright 2013, Donovan Cameron (sault.don@gmail.com)
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License at (http://www.gnu.org/licenses/) for
+# more details.
+
+# Usage: CanVecSHP.sh (set exec bit before running, chmod +x CanVecSHP.sh)
+
+# Revision history:
+# 2011-05-29    Created
+# ---------------------------------------------------------------------------
 
 # Introduction
 read -p "
