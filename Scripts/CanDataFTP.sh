@@ -40,29 +40,6 @@ echo -e "\n\n##################################################
 # ...into a workspace you specify!
 ##################################################\n"
 
-
-########################
-#	Ask for email, verify they at least match!
-########################
-read -p "*****************************************
-* What is your email address?
-*
-* The email is required for the ftp password, and you will
-* log-in under username 'anonymous' by default.
-*****************************************
-email: " FTPP
-read -p "again: "
-
-# Test if they match!
-if [[ "${REPLY}" == "${FTPP}" ]]; then
-  echo -e "\n* They match!\n"
-  echo -e "ftp_user=anonymous\nftp_password='${FTPP}'" > ~/.wgetrc
-else
-  echo -e "\nEmails don't match, try again.
-# Script closing!"
-  exit 1
-fi
-
 ########################
 #	Ask for workspace, create if needed,
 ########################
@@ -343,5 +320,3 @@ SCRF=$(date +%s.%N)
 ########################
 DIFF=$(echo $SCRF $SCRS | awk 'END {printf "%.2f\n", $1-$2}')
 echo "# Script finished in ${DIFF} s"
-rm ~/.wgetrc
-echo "# ~/.wgetrc file removed (it had your email as the password)"
