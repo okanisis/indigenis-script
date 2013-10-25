@@ -17,9 +17,7 @@ Currently, they favor the shapefile. That could change as I grow accustom to spa
 Prior to executing the script it will need to be made executable with the following:
     $ chmod +x CanDataFTP.sh
 
-Each script contains a small description, so view them in your text editor for details.
-
 I will fill out the wiki on usage and screenshots/videos to help understand how they work, but for now I have formatted them fairly nicely and included comments.
 
 ## License:
-Images/scripts are shared via git under a [GNU General Public License (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.txt)
+[GNU General Public License (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.txt)
